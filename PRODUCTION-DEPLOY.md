@@ -550,8 +550,8 @@ server {
         server_name maps.our.company.com;
 
         ssl on;
-        ssl_certificate /etc/ssl/certs/map.apps.hcr-manorcare.pem;
-        ssl_certificate_key /etc/ssl/certs/map.apps.hcr-manorcare.key;
+        ssl_certificate /etc/ssl/certs/map.our.company.pem;
+        ssl_certificate_key /etc/ssl/certs/map.our.company.key;
 
         # important, allows proxy connection to use http
         proxy_ssl_session_reuse off;
