@@ -653,11 +653,11 @@ bundle exec rails s -p 3000
 And now we add them as reboot items in the `crontab`, forwarding the STDOUT of each process to its own log for debugging:
 
 ```bash
-@reboot  username  bash /wherever/cdb-sql-api.sh > /wherever/devlog.txt 2>&1 &
-@reboot  username  bash /wherever/cdb-windshaft.sh > /wherever/devlog.txt 2>&1 &
-@reboot  username  bash /wherever/cdb-redis-server.sh > /wherever/devlog.txt 2>&1 &
-@reboot  username  bash /wherever/cdb-resque.sh > /wherever/devlog.txt 2>&1 &
-@reboot  username  bash /wherever/cdb-cdb.sh > /wherever/devlog.txt 2>&1 &
+@reboot  username  bash /wherever/cdb-sql-api.sh > /wherever/dev-sql-api-log.txt 2>&1 &
+@reboot  username  bash /wherever/cdb-windshaft.sh > /wherever/dev-windshaft-log.txt 2>&1 &
+@reboot  username  bash /wherever/cdb-redis-server.sh > /wherever/dev-redis-log.txt 2>&1 &
+@reboot  username  bash /wherever/cdb-resque.sh > /wherever/dev-resque-log.txt 2>&1 &
+@reboot  username  bash /wherever/cdb-cdb.sh > /wherever/dev-cdb-log.txt 2>&1 &
 ```
 
 Boom.
