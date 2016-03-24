@@ -352,7 +352,7 @@ Note, pip seems to be cranky about SSL, so we have to point it directly to our Z
 # download local copies of the pip package
 # and the pip installer
 # edit installer to call local file
-# then run unstaller
+# then run installer
 
 export CPLUS_INCLUDE_PATH=/usr/include/gdal
 export C_INCLUDE_PATH=/usr/include/gdal
